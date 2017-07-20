@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 
 def generate_triangle(inten_array):
         #take a flat line (array of all zeros) and make a triangle in the middle of it
@@ -15,3 +16,6 @@ def generate_triangle(inten_array):
 
 triangle_inten = generate_triangle([0]*400)
 print(triangle_inten)
+
+plt.plot(triangle_inten)
+plt.show()
