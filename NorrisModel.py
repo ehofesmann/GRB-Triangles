@@ -6,7 +6,7 @@ from matplotlib.widgets import Slider, Button, RadioButtons
 
 burstnum = 143
 
-filename = "../../../Gamma Ray Bursts/0000/cat64ms." + str(burstnum).zfill(5)
+filename = "./cat64ms." + str(burstnum).zfill(5)
 
 file = open(filename, "r") 
 file.readline()
@@ -22,17 +22,17 @@ for line in file:
 
     
 #generate triangle (I forgot I already made the method)
-chnew = []
-for i in range(len(channel)):
-    if(i <= nlasc):
-        chnew.append(100)
-    elif(i <= nlasc+100):
-        chnew.append(100+i-nlasc)
-    elif(i <= nlasc+200):
-        chnew.append(300+nlasc-i)
-    else:
-        chnew.append(100)
-channel=chnew
+#chnew = []
+#for i in range(len(channel)):
+#    if(i <= nlasc):
+#        chnew.append(100)
+#    elif(i <= nlasc+100):
+#        chnew.append(100+i-nlasc)
+#    elif(i <= nlasc+200):
+#        chnew.append(300+nlasc-i)
+#    else:
+#        chnew.append(100)
+#channel=chnew
     
 
 
